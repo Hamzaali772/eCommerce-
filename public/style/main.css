@@ -1,0 +1,430 @@
+body{
+    overflow-x: hidden;
+}
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-ul>li{
+    list-style-type: none;
+}
+.nav-ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.nav-icon-close{
+    display: none;
+}
+.open-header{
+    display: none;
+}
+.container>.top-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+.top-header>span{
+    color: lightskyblue;
+}
+.top-header h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+.container>.top-img{
+    width: 100%;
+    margin: 2rem 0rem;
+    position: relative;
+}
+.container>.top-img>img{
+    border-radius: 20px;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.300);
+}
+.container>.top-img>.mobile{
+    position: absolute;
+    bottom:-50px;
+    right: -50px;
+
+
+}
+.row>.client{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.client>ion-icon{
+    color: rgb(85, 193, 235);
+    margin: 0.4rem;
+}
+.client>div>span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.four{
+    text-align: center;
+    position: relative;
+}
+.four>h1{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+}
+.four>h2 {
+    font-size: 15rem;
+    font-weight: bolder;
+    background: linear-gradient(to bottom, rgba(85, 193, 235, 0.962), rgba(255, 255, 255, 0.869));
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+.card-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5 ease-in-out;
+}
+.card-link>span{
+    margin-top: 1rem;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+}
+.card-link:hover span {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.card-image{
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.411);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.card-image>img{
+    width: 100%;
+    height: 300px;
+}
+.card-link:hover .card-image{
+    transform: translateY(-8px);
+}
+.card-filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 1rem;
+}
+.card-filter>p{
+    color: #aaa;
+    text-align: center ;
+    margin-block: 0.5rem;
+    width: 250px;
+}
+.card-filter>h3{
+    font-size: 1.5rem;
+    margin-block:0.5rem;
+}
+.optimized{
+    position: absolute;
+    left: 100px;
+    text-align: center;
+}
+.optimized>p{
+color: #aaa;
+}
+.Headar-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shape1{
+    position: absolute;
+    top: 130px;
+    left: -8px;
+}
+.shape2{
+    position: absolute;
+    top: 200px;
+    right: -8px;
+    rotate: 200deg;
+}
+.shape3{
+    position: absolute;
+    top: 350px;
+    left: 10px;
+    
+}
+.shape4{
+      position: absolute;
+      top: 50px;
+      right: 70px;
+      rotate: 60deg;
+}
+.shape5{
+      position: absolute;
+      top: 100px;
+      left: 30px;
+}
+
+.horizontal-slider {
+    animation: horizonalSlide 90s linear infinite
+}
+
+@keyframes horizonalSlide {
+    to {
+        transform: translate3d(-50%, 0, 0)
+    }
+}
+.plugin{
+    text-align: center;
+    background-color: #ECEEF3;
+    margin-bottom: 1rem;
+    padding-block: 1rem;
+    padding-inline: 0.5rem;
+    margin-inline: 0.5rem;
+}
+footer>div{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../media/footer/footer-shape-2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    position: relative;
+}
+footer>div>.flower{
+    position: absolute;
+    top: 70px;
+    left: 25%;
+     animation: tpSwing 2s linear infinite alternate
+}
+footer>div>.flower-down{
+    position: absolute;
+    bottom: 0px;
+    right: 20%;
+     animation: tpSwing 2s linear infinite alternate
+}
+footer>div>.flower-right{
+    position: absolute;
+    top: -50px;
+    right: 8%;
+}
+footer .fw-bolder{
+    font-size: 3.5rem;
+}
+
+@keyframes tpSwing {
+    0% {
+        transform: rotate(6deg)
+    }
+    to {
+        transform: rotate(-6deg)
+    }
+}
+.slider-bg{
+    background-image: url(../media/hf/shape_02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 400px;
+    padding-block: 10rem;
+    text-align: center;
+    position: relative;
+}
+.slider-bg>h6{
+margin-bottom: 3rem;
+}
+.slider{
+    width: 100%;
+    max-width: 700px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slider>.slide{
+    flex: 0 0 100%;
+    transition: all 0.5 ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-star>ion-icon{
+    color: orange   ;
+}
+.slide>h3{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 2rem 0rem ;
+}
+.slider-cover{
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.slide-btn{
+    outline: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.109);
+    padding: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    cursor: pointer;
+}
+.slide-btn:hover{
+    background-color: rgba(46, 46, 245, 0.912);
+    color: white;
+}
+.back{
+    left: 90px;
+}
+.forward{
+    right: 90px;
+}
+.product-page{
+    margin: 0 auto;
+}
+.product-page>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.product-page>ul>li{
+    list-style-type: none;
+    margin: 0px 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.product-page>ul>li:hover{
+    border-bottom: 1px solid white;
+}
+.product-page>ul>li>a{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+
+}
+.inner-page{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.inner-page>h1{
+    color: white;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.inner-page>p{
+    color: #aaa;
+}
+.product-page{
+    margin-bottom: 3rem;
+}
+.product-slider>.product-shop-other{
+    flex: 0 0 100%;
+    transition: all 0.5 ease-in-out;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.product-slider>.product-slide{
+    display: block;
+}
+
+.product-slider>.shop-slide{
+    display: none;
+}
+.product-slider>.other-slide{
+    display: none;
+}
+.product-slider>.product-shop-other>a>img{
+    height: 300px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 770px) {
+    .nav-ul {
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        background-color: white;
+        top: 0px;
+        right: -110%;
+        max-width: 400px;
+        min-width:300px;
+        padding: 1rem 2rem;
+        z-index: 100000;
+        min-height: 100%;
+        height: 800px;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-ul>li{
+        list-style-type: none;
+        padding-block: 1rem;
+        border-bottom: 1px solid #aaa;
+    }
+    .nav-ul>li>a{
+        text-decoration: none;
+        color: black;
+        font-weight: normal;
+    }
+    .nav-icon-close{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5rem 0rem 1.5rem 0rem;
+    }
+    .nav-icon-close>ion-icon{
+        padding: 0.3rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background-color:#ECEEF3;
+        cursor: pointer;
+    }
+    .open-header{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .open-header>ion-icon{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:850px) {
+    .container>.top-img>.mobile{
+        height: 350px;
+    }
+    .top-header h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .container>.top-img>.mobile{
+        right: -20px;
+        height: 300px;
+    }
+    .top-header h1{
+        font-size: 1.5rem;
+    }
+}
